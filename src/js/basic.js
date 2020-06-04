@@ -1,6 +1,7 @@
 export default function destruct(character) {
   let result = [];
   const { special = 'спецатаки отсутствуют' } = character;
+  // eslint-disable-next-line no-prototype-builtins
   if (character.hasOwnProperty('special')) {
     special.forEach((item) => {
       const {
